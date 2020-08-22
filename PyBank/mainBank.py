@@ -20,7 +20,7 @@ greatest_loss_decrease_month = 0
 with open(Budget_csv) as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter=',')
-    # header row: ASK ABOUT THIS.
+    # header row: pulled from class example. ASK ABOUT THIS.
     csv_header = next(csvreader)
     row = next(csvreader)
     
@@ -68,7 +68,7 @@ print(f"Financial Analysis")
 print(f"--------------------------------")
 print(f"Total Months: {total_months}")
 print(f"Total: ${net_total}")
-print(f"Average Change: ${average_change:.2f} per (some unit of time. month in this case?)")
+print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_profit_increase_month}, (${highest_profit})")
 print(f"Greatest Loss (Decrease in Profits): {greatest_loss_month}, (${lowest_loss})")
 
